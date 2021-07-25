@@ -1,0 +1,182 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.section{
+    padding: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    font-family: sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+}
+.btn{
+    padding: 1%;
+    font-weight: 700;
+    background-color: inherit;
+    border: 1px solid black;
+}
+.cart{
+    font-weight: 400;
+    padding: 0.5% 6%;
+}
+.bdLight{
+    border: .01em solid #E5E8E8;
+}
+#emptyCart{
+    width: 35%;
+    height: 270px;
+    margin: auto;
+    text-align: center;
+}
+#emptyCart > img{
+    max-width: 50%;
+}
+.blueBtn{
+    background-color: #a435f0;
+    border-color: transparent;
+    padding: 4%;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 5% 0%;
+}
+.blueBtn:hover{
+  background-color: #581C7E;
+}
+.header23{
+    background-color: #1c1d1f;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    /* font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;; */
+    padding: 4% 5%;
+    margin: 0%;
+}
+#cartItems{
+    display: grid;
+    grid-template-columns: 72% 26%;
+    gap: 4%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 60px;
+}
+#cartItems > div{
+    flex-grow: 2;
+    margin: 1% 0%;
+}
+#cartItems > div > p{
+  margin: 2% 0%;
+}
+#showOnLog > p{
+  margin: 2% 0%;
+}
+.maxWidth{
+    min-width: 100%;
+}
+.icon{
+    width: 10px;
+    height: 10px;
+}
+.cross{
+    margin: 0% 5%;
+}
+#coupon{
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+}
+.couponBtn{
+    padding: 2%;
+    max-height: 100%;
+}
+#coupon > input{
+    padding: 3%;
+    margin: 0%;
+    font-weight: 400;
+    border: 1px solid black;
+    margin-right: 0%;
+    flex-grow: 1;
+}
+#couponName{
+    font-weight: 700;
+    font-size: 18px;
+}
+.saved{
+    margin: 0%;
+    padding: 0%;
+}
+#cart{
+    display: flex;
+    flex-direction: column;
+}
+.inCart{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2%;
+    padding: 2%;
+}
+.tutor{
+  font-weight: 300;
+  font-size: 12px;
+}
+.text{
+    overflow: hidden;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 1.2;
+    letter-spacing: -0.02rem;
+    overflow: hidden;
+}
+.rBtn{
+    cursor: pointer;
+    color: #5624d0;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1 !important;
+    padding: 0 !important;
+    border: transparent;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    min-height: 20px;
+}
+.cartButtons{
+    display: flex;
+    flex-direction: column;
+}
+.courseName{
+    grid-area: b;
+    font-weight: 700;
+}
+.image{
+    grid-area: a;
+    max-width: 140px;
+    height: auto;
+    cursor: pointer;
+}
+.price{
+    font-size: 17px;
+    font-weight: 700;
+    color: #a435f0;
+    cursor: pointer;
+    line-height: 1;
+    text-align: right;
+    position: relative;
+    flex-grow: 2;
+}
+#priceOff{
+  text-decoration: line-through;
+  font-size: 28px;
+}
+#cartTotal{
+  margin-right: 5px;
+}
+#mainText{
+  width: 55%;
+}
+#checkout{
+  padding: 7%;
+}

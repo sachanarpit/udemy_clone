@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+    <style>
+        body{
+            padding: 5%;
+        }
+        .container{
+            background-color: aqua;
+            border-radius: 20%;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding: 2%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        img{
+            width: 100px;
+        }
+        span>img{
+            width: 30px;
+        }
+        #bought{
+            border: 2px double black;
+            border-radius: 20%;
+            box-shadow: 10px 10px whitesmoke;
+            padding: 3%;
+            font-size: 20px;
+            color: red;
+            font-weight: 700;
+        }
+        div+p{
+            font-size: 22px;
+        }
+        .animateBottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+        @keyframes animatebottom { 
+            from{ bottom:-100px; opacity:0 } 
+            to{ bottom:0; opacity:1 }
+        }
+        .blueBtn{
+            background-color: #a435f0;
+            border-color: transparent;
+            padding: 4%;
+            width: 80%;
+            color: #fff;
+            font-weight: 700;
+            font-size: 16px;
+            margin: 5% 0%;
+            border-radius: 10px;
+        }
+        .blueBtn:hover{
+          background-color: #581C7E;
+        }  
+    </style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div  id="myDiv" class="animateBottom container">
+        <img src="images/checked.png" >
+        <h1><span>Payment Successful</span><span><img src="images/success.png"></span></h1>
+        <p>Now, you can access the following Couses:</p>
+        <div id="bought"></div>
+        <p>Keep Learning Something New Everyday</p>
+        <button class="blueBtn btnH">Go Back to Home Page</button>
+    </div>
+</body>
+</html>
+<script>
+    let course = document.getElementById("bought");
+    let data = JSON.parse(localStorage.getItem("cart"));
+    data.forEach(function(x){
+        let p = document.createElement("p");
+        p.innerText = x;
+        course.append(p);
+    });
+    let myVar;
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("myDiv").style.display = "block";
+    }
+      //home button ->go to main page
+    const btnH = document.getElementsByClassName("btnH");
+    for(let i=0;i<btnH.length;i++){
+        btnH[i].addEventListener("click", function(){
+            window.location.href = "main.html";
+        });
+    }
+</script>

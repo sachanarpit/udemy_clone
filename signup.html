@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css" >
+    <style>
+        .login-cont{
+            font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+            font-size: 15px;
+            line-height: 1.43;
+            color: #1c1d1f;
+            background-color: #fff;
+            margin: 0;
+            border-radius: 0;
+            color: #1c1d1f;
+            width: 380px;
+            margin: 24px auto;
+            max-width: 100%;
+            align-items: center;
+        }
+        .step1{
+            border-bottom: solid 1px #d1d7dc;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            color: #1c1d1f;
+            display: block;
+            font-weight: 720;
+            font-size: 15px;
+            padding: 24px 64px 24px 24px;
+            margin-bottom: 24px;
+        }
+        .fbcolor{
+            color: #1c1d1f;    box-shadow: 0 2px 2px 0 rgb(28 29 31 / 24%), 0 0 2px 0 rgb(28 29 31 / 12%);
+            color: #fff;
+            border-radius: 0;
+            font-size: 16px;
+            font-weight: 700;
+            height: 48px;
+            margin-bottom: 8px;
+            padding: 0;
+        }
+        .forone{
+            background-color: #5624d0;
+        }
+        .fbcolor-inside{
+            color:white;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            
+            background-color: transparent;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .colorforthis{
+            color:black;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;            
+            background-color: transparent;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .form {
+            display: flex;
+            margin-top: 0em;
+        }
+        .usermail,.pwdd{
+            width: 98%;
+            height: 40px;
+            color: #1c1d1f;
+            font-size: 18px;
+
+        }
+        .usermail{
+            margin-bottom: 12px;
+        }
+        
+        
+        .newlogclass{
+            width: 100%;
+            height:50px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 1rem;
+            border: 1px solid black;
+            color:white;
+            background-color:#A435F0;
+        }
+        .extraafter{
+            display: flex;
+            justify-content: center;
+        }
+        .tandc{
+            font-size: 10px;
+            margin: 3px 0 0 17px;
+            margin-top: 30px;   
+            margin-bottom: 10px;         
+
+        }
+        .tandc > span{
+            color:#5624D0;
+        }
+        #name {
+          background-image: url("https://img.icons8.com/material/20/000000/person-male.png");
+          background-size:contain;
+          background-repeat: no-repeat;
+          text-indent: 50px;
+          border: 1px solid black;
+          font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+      }
+      #Email {
+          background-image: url("https://img.icons8.com/material-rounded/20/000000/new-post.png");
+          background-size:contain;
+          background-repeat: no-repeat;
+          text-indent: 50px;
+          border: 1px solid black;
+          font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+      }
+      #password {
+          background-image: url("https://img.icons8.com/ios-glyphs/30/000000/lock--v1.png");
+          background-size:contain;
+          background-repeat: no-repeat;
+          text-indent: 50px;
+          border: 1px solid black;
+          margin-bottom: 10px;
+          font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+      }
+      .exitto{
+        padding: 10px 0 0 0;
+        border-top: 1px solid #d1d7dc;
+        margin-left: 15px;
+      }
+      .exitto > span{
+        color: #5624D0;
+      }
+      .blueBtn{
+    background-color: #a435f0;
+    border-color: transparent;
+    padding: 4%;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 5% 0%;
+}
+.blueBtn:hover{
+  background-color: #581C7E;
+}
+    </style>
+</head>
+<body>
+    
+  
+   <!-- this is header -->
+   <div id="header">
+    <div id="top-bar">
+      <!--Main logo of website-->
+      <div class="logo">
+        <img class="btnH"
+          src="https://i.ibb.co/QnJ7Bws/default-meta-image-v2-2-1-removebg-preview.png"
+          alt="udemy"
+          title="udemy logo"
+          width="100"
+        />
+      </div>
+
+      <!--Main maineu of website-->
+      <div class="hoover_1">
+        <ul>
+          <li style="margin-top: 15%;"><a href="">Categories</a>
+            <div class="hoover_2">
+              <ul>
+        
+                <li class="hoover_3"><a href="">Development</a>
+                  <div class="hoover_4">
+                    <ul>
+                      <li class="hoover_5"><a href="">Web Development</a>
+                        <div class="hoover_6">
+                          <ul>
+                            <li>
+                              <h3>Popular topics</h3>
+                            </li>
+        
+                            <li><a href="">JavaScript</a></li>
+        
+                            <li><a href="">React</a></li>
+        
+                            <li><a href="">Angular</a></li>
+        
+                            <li><a href="">CSS</a></li>
+        
+                            <li><a href="">Django</a></li>
+        
+                            <li><a href="">PHP</a></li>
+        
+                            <li><a href="">Node.js</a></li>
+        
+                            <li><a href="">WordPress</a></li>
+                          </ul>
+                        </div>
+                      </li>
+        
+                      <li><a href="">Data Science</a></li>
+        
+                      <li><a href="">Mobile Development</a></li>
+        
+                      <li><a href="">programming Languages</a></li>
+        
+                      <li><a href="">Game Development</a></li>
+        
+                      <li><a href="">Database Design & Development</a></li>
+        
+                      <li><a href="">Software Testing</a></li>
+        
+                      <li><a href="">Software Engineering</a></li>
+        
+                      <li><a href="">Software Development Tools</a></li>
+        
+                      <li><a href="">No-Code Development</a></li>
+                    </ul>
+                  </div>
+                </li>
+        
+                <li><a href="">Business</a></li>
+        
+                <li><a href="">Finance & Accounting</a></li>
+        
+                <li><a href="">IT & Software</a></li>
+        
+                <li><a href="">office productivity</a></li>
+        
+                <li><a href="">Personal Development</a></li>
+        
+                <li><a href="">Design</a></li>
+        
+                <li><a href="">Marketing</a></li>
+        
+                <li><a href="">Lifestyle</a></li>
+        
+                <li><a href="">Health & Fitness</a></li>
+        
+                <li><a href="">Music</a></li>
+        
+                <li><a href="">Teaching & Academics</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!--search bar of website-->
+      <div class="search-box">
+        <form class="search-container">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search for anything"
+          />
+        </form>
+      </div>
+
+      <!-- udemy Business -->
+      <div class="Bcm-instructor-btn">Udemy Business</div>
+
+      <!--Become An instructor button-->
+      <div class="Bcm-instructor-btn">Teach on Udemy</div>
+
+      <!--Shopping cart button-->
+      <div class="shopping-cart-btn">
+        <img
+          src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png"
+        />
+      </div>
+
+      <!-- sign Up  -->
+      <div class="header_signup_btn">Sign up</div>
+
+      <!-- log in  -->
+      <div class="header_login_btn">log in</div>
+      <!--Nottification Button-->
+      <div class="notification-btn"></div>
+
+      <!--dark mode-->
+      <!-- <div class="account-detail-btn"><button onclick="myDarkMode()">Toggle dark mode</button></div> -->
+    </div>
+  </div>
+
+
+
+    <div class='login-cont'>
+        <div class='step1'>Sign Up and Start Learning!</div>
+        <form id='mainForm'>
+            <label for='name'></label>
+            <input type='text' id=name class='usermail' placeholder="Name"></input>
+
+            <label for='Email'></label>
+            <input type='text' id=Email class='usermail' placeholder="Email"></input>
+            <label for='password'></label>
+            <input type='password' id='password' class='pwdd' placeholder="Password"></input>
+            <input type="checkbox" id="checkp" name="checkp" >
+            <label for="checkp">I’m in for emails with exciting discounts and personalized recommendations</label>
+            
+            <button class=' newlogclass blueBtn' onclick="SignUp()">Sign up </button>
+
+            <div class='tandc'>By signing up, you agree to our <span>Terms of Use</span>and <span>Privacy Policy.</span></div>
+            <div class='exitto'>Already have an account?<span onclick="loginPage()"> Log In</span></div>
+        </form>
+    </div>
+<script src="mix.js"></script>
+</body>
+</html>
+
+
+<script>
+function SignUp() {
+  var form = document.getElementById("mainForm");
+  let name = form.name.value;
+
+  let mail = form.Email.value;
+  let password = form.password.value;
+  if (name != ""  && password != "" && mail != "") {
+    let userdata = {
+      name,
+      mail,
+      password
+    };
+
+    let arr;
+    arr = localStorage.getItem("userdetails");
+    if (arr == null) {
+      arr = [];
+    } else {
+      arr = JSON.parse(localStorage.getItem("userdetails"));
+    }
+
+    arr.push(userdata);
+
+    localStorage.setItem("userdetails", JSON.stringify(arr));
+  }
+}
+</script>
