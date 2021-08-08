@@ -50,5 +50,24 @@ for (let i = 0; i < cartBtn.length; i++) {
       arr.push(course);
       localStorage.setItem("cart", JSON.stringify(arr));
     }
+    changeText();
   });
+}
+
+changeText();
+function changeText(){
+let cartItems = JSON.parse(localStorage.getItem("cart"));
+let course = document.getElementsByClassName("course")[0].innerHTML;
+let text1 = document.getElementById("showAddtoCart");
+let text2 = document.getElementById("showAddedtoCart");
+text2.style.display = "none";
+for(let i of cartItems){
+  if(i==course){
+    text1.style.display = "none";
+    text2.style.display = "block";
+  }else{
+      text2.style.display = "none";
+      text1.style.display = "block";   
+  }
+}
 }

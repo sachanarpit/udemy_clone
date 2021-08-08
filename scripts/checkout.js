@@ -31,6 +31,8 @@ function checkInput(){
     return true;
 }
 
+var payMethod = "card";
+
 function paymentMethod(){
     let card = document.getElementById("card");
     let netBanking = document.getElementById("netBanking");
@@ -48,16 +50,20 @@ function paymentMethod(){
         byCard.style.display = "none";
         if(netBanking.checked==true){
             byNet.style.display = "block";
+            payMethod = "netBanking"
         }
         else if(upi.checked==true){
             byUpi.style.display = "block";
+            payMethod = "upi"
         }
         else if(paytm.checked==true){
             byPaytm.style.display = "block";
+            payMethod = "paytm"
         }
     }
     else{
         byCard.style.display = "block";
+        payMethod = "card"
     }
 }
 
@@ -98,7 +104,7 @@ tBill.append(bill);
 
 let Pay = document.getElementById("Payment");
 Pay.addEventListener("click", function(){
-    if(checkInput()){
+    if(checkInput() || payMethod!="card"){
         window.location.href = "paySuccess.html";
     }else{
         alert("Please fill proper details");
@@ -120,6 +126,6 @@ for(let i=0;i<btn.length;i++){
   const btnH = document.getElementsByClassName("btnH");
   for(let i=0;i<btnH.length;i++){
       btnH[i].addEventListener("click", function(){
-          window.location.href = "main.html";
+          window.location.href = "index.html";
       });
   }

@@ -440,3 +440,10 @@
   background-color: black;
   color: white;
 }
+.cartBtn:hover{
+  background-color: #581C7E;
+  color: #1c1d1f;
+}
+.cartBtn{
+  background-color: #8710d8;
+}

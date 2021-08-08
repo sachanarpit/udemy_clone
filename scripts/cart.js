@@ -21,6 +21,8 @@ function check() {
     for (let i = 0; i < box.length; i++) {
       box[i].style.display = "none";
     }
+    let box2 = document.getElementById("emptyCart");
+    box2.style.display = "block";
     let cartProp = document.getElementById("cartItems");
     cartProp.style.display = "flex";
   } else {
@@ -59,6 +61,16 @@ function check() {
   cartTotal2.innerHTML = cartTotal;
 }
 
+
+function showOnPage(){
+  if(cartTotal==0){
+    check();
+    showInCart();
+    return;
+  }
+  showInCart();
+  check();
+}
 //discount coupon
 function checkCoupon() {
   let couponCode = document.getElementById("couponCode").value;
@@ -73,7 +85,14 @@ function checkCoupon() {
 }
 
 localStorage.removeItem("discount");
-let cartTotal = 0;
+
+let cartTotal = JSON.parse(localStorage.getItem("cart"));
+console.log(cartTotal);
+if(cartTotal==null){
+  cartTotal = 0;
+}else{
+  cartTotal = cartTotal.length;
+}
 let saved = 0;
 let wished = 0;
 
@@ -100,7 +119,7 @@ function applyCouponCode() {
 const btnH = document.getElementsByClassName("btnH");
 for (let i = 0; i < btnH.length; i++) {
   btnH[i].addEventListener("click", function () {
-    window.location.href = "main.html";
+    window.location.href = "../index.html";
   });
 }
 
@@ -156,15 +175,13 @@ function showInCart() {
         <div class="cartButtons"><a class="rBtn1 rBtn">Remove</a><a class="rBtn2 rBtn">Save For Later</a><a class="rBtn3 rBtn">Move to Wishlist</a></div>
         <p class="price">₹${price}</p>`;
     dest.append(divC);
-    cartTotal++;
   }
   Bill = bill;
   bill = bill.toLocaleString("en-US");
   totalBill.innerText = bill;
 }
+showOnPage();
 
-showInCart();
-check();
 let removeBtn = document.getElementsByClassName("rBtn1");
 let courseInCart = document.getElementsByClassName("courseName");
 for (let i = 0; i < removeBtn.length; i++) {
@@ -179,10 +196,9 @@ for (let i = 0; i < removeBtn.length; i++) {
         break;
       }
     }
-    cartTotal = 0;
+    cartTotal--;
     localStorage.setItem("cart", JSON.stringify(arr));
-    showInCart();
-    check();
+    showOnPage();
   });
 }
 

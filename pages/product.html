@@ -12,23 +12,23 @@
 
   <body>
 
-      <div id="header">
+    <!-- first slider whole box starts -->
+    <div id="header">
       <div id="top-bar">
         <!--Main logo of website-->
-        <div class="logo" onclick="logolink()">
+        <div class="logo topBtn" onclick="logolink()">
           <img
             src="https://i.ibb.co/QnJ7Bws/default-meta-image-v2-2-1-removebg-preview.png"
             alt="udemy"
             title="udemy logo"
-            width="100"
-            style="margin-top: -10px;"
+            width="100px"
           />
         </div>
 
         <!--Main maineu of website-->
         <div class="main-menu">
-          <ul class="header_ul">
-           <a href="categories.html" style="color: black; text-decoration: none;"> <li class="header_cat_list">
+          <ul class="header_ul topBtn" onclick="exploreCourses()">
+           <a href="" style="color: black; text-decoration: none;"> <li class="header_cat_list">
               Categories
               <ul class="header_ul sub-menu">
                 <li class="header_cat_list">
@@ -99,23 +99,23 @@
         </div>
 
         <!-- udemy Business -->
-        <div class="Bcm-instructor-btn">Udemy Business</div>
+        <div class="Bcm-instructor-btn topBtn">Udemy Business</div>
 
         <!--Become An instructor button-->
-        <div class="Bcm-instructor-btn">Teach on Udemy</div>
+        <div class="Bcm-instructor-btn topBtn">Teach on Udemy</div>
 
         <!--Shopping cart button-->
-        <div class="shopping-cart-btn">
+        <div class="shopping-cart-btn topBtn" onclick="cartPage()">
           <img
             src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png"
           />
         </div>
 
         <!-- sign Up  -->
-        <div class="header_signup_btn">Sign up</div>
+        <div class="header_signup_btn topBtn" onclick="signupPage()">Sign up</div>
 
         <!-- log in  -->
-        <div class="header_login_btn">log in</div>
+        <div class="header_login_btn topBtn" onclick="loginPage()">Log in</div>
         <!--Nottification Button-->
         <div class="notification-btn"></div>
 
@@ -123,6 +123,7 @@
         <!-- <div class="account-detail-btn"><button onclick="myDarkMode()">Toggle dark mode</button></div> -->
       </div>
     </div>
+      
 
 <!-- header ends -->
     <div id="page_1">
@@ -135,7 +136,6 @@
               width: 100%;
               height: 50px;
               margin: 1%;
-              background-color: #8710d8;
               color: #fff;
               font-size: 1.2rem;
               font-family: sf pro display, -apple-system, BlinkMacSystemFont,
@@ -145,9 +145,10 @@
             "
             class="cartBtn"
           >
-            <b>Add to cart</b></button
+            <b id="showAddtoCart">Add to cart</b>
+            <b id="showAddedtoCart">Added to cart</b></button
           ><br />
-          <button
+          <button  onclick="cartPage()"
             style="width: 100%; height: 50px; margin: 1%; font-size: 18px"
           >
             <b>Buy now</b>
@@ -674,6 +675,7 @@
   <!-- footer end -->
 
 
+  <script src="../scripts/product.js"></script>
+  <script src="../scripts/mix2.js"></script>
   </body>
 </html>
-<script src="../scripts/product.js"></script>

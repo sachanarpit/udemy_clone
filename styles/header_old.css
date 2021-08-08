@@ -223,3 +223,6 @@
     segoe ui symbol;
   font-weight: 700;
 }
+.topBtn{
+  cursor: pointer;
+}
