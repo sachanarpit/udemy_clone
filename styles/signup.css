@@ -1,0 +1,145 @@
+.login-cont{
+    font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-size: 15px;
+    line-height: 1.43;
+    color: #1c1d1f;
+    background-color: #fff;
+    margin: 0;
+    border-radius: 0;
+    color: #1c1d1f;
+    width: 380px;
+    margin: 24px auto;
+    max-width: 100%;
+    align-items: center;
+}
+.step1{
+    border-bottom: solid 1px #d1d7dc;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #1c1d1f;
+    display: block;
+    font-weight: 720;
+    font-size: 15px;
+    padding: 24px 64px 24px 24px;
+    margin-bottom: 24px;
+}
+.fbcolor{
+    color: #1c1d1f;    box-shadow: 0 2px 2px 0 rgb(28 29 31 / 24%), 0 0 2px 0 rgb(28 29 31 / 12%);
+    color: #fff;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    margin-bottom: 8px;
+    padding: 0;
+}
+.forone{
+    background-color: #5624d0;
+}
+.fbcolor-inside{
+    color:white;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    
+    background-color: transparent;
+    font-weight: 400;
+    cursor: pointer;
+}
+.colorforthis{
+    color:black;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;            
+    background-color: transparent;
+    font-weight: 400;
+    cursor: pointer;
+}
+.form {
+    display: flex;
+    margin-top: 0em;
+}
+.usermail,.pwdd{
+    width: 98%;
+    height: 40px;
+    color: #1c1d1f;
+    font-size: 18px;
+
+}
+.usermail{
+    margin-bottom: 12px;
+}
+
+
+.newlogclass{
+    width: 100%;
+    height:50px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid black;
+    color:white;
+    background-color:#A435F0;
+}
+.extraafter{
+    display: flex;
+    justify-content: center;
+}
+.tandc{
+    font-size: 10px;
+    margin: 3px 0 0 17px;
+    margin-top: 30px;   
+    margin-bottom: 10px;         
+
+}
+.tandc > span{
+    color:#5624D0;
+}
+#name {
+  background-image: url("https://img.icons8.com/material/20/000000/person-male.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  text-indent: 50px;
+  border: 1px solid black;
+  font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+#Email {
+  background-image: url("https://img.icons8.com/material-rounded/20/000000/new-post.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  text-indent: 50px;
+  border: 1px solid black;
+  font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+#password {
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/lock--v1.png");
+  background-size:contain;
+  background-repeat: no-repeat;
+  text-indent: 50px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  font-family: sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+.exitto{
+padding: 10px 0 0 0;
+border-top: 1px solid #d1d7dc;
+margin-left: 15px;
+}
+.exitto > span{
+color: #5624D0;
+}
+.blueBtn{
+background-color: #a435f0;
+border-color: transparent;
+padding: 4%;
+width: 100%;
+color: #fff;
+font-weight: 700;
+font-size: 16px;
+margin: 5% 0%;
+}
+.blueBtn:hover{
+background-color: #581C7E;
+}

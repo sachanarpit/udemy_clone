@@ -1,0 +1,122 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.section {
+  padding: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+}
+.section h2 {
+  margin-bottom: 20px;
+}
+.bg1 {
+  background-color: #f8f9fb;
+}
+#topCategories {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 300px 300px;
+  row-gap: 50px;
+}
+.cat {
+  max-width: 280px;
+}
+#topCategories div {
+  padding: 5%;
+  background-color: #f8f9fb;
+}
+#topCategories img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  transition: transform 0.2s;
+}
+#featuredTopics {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+}
+#featuredTopics > div {
+  margin-top: 15px;
+  flex-grow: 1;
+}
+#featuredTopics > div p {
+  color: #6a6f73;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+#featuredTopics > div a {
+  color: #5624d0;
+}
+.btn {
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  padding: 1%;
+  font-weight: 700;
+  background-color: inherit;
+  border: 2px solid black;
+}
+
+.btn:hover {
+  background-color: rgba(204, 204, 202, 0.575);
+}
+
+.cat_items {
+  margin-top: 20px;
+}
+
+.container-box {
+  border: 1px solid #d1d7dc;
+}
+
+.container-box > h1 {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.container-box > p {
+  margin-left: 50px;
+}
+.container-box > button {
+  margin-left: 50px;
+}
+
+.divider_sec {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  background-color: #f8f9fb;
+  width: 100%;
+  height: 100px;
+  margin-top: 80px;
+}
+.divider_item {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgba(255, 140, 0, 0);
+  margin-left: 10%;
+  margin-top: 30px;
+}
+
+.divider_item > svg {
+  margin-right: -40px;
+}
+
+.divider_item > p {
+  margin-left: -30%;
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.4;
+
+  color: #1c1d1f;
+  margin: 0;
+}

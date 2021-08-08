@@ -1,0 +1,170 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  position: relative;
+}
+
+li {
+  display: inline-block;
+  /* padding: 10px; */
+
+  background-color: rgba(165, 42, 42, 0);
+  width: 20%;
+  margin-right: 30px;
+}
+
+
+.product-container {
+  padding: 15px;
+  background: rgba(206, 23, 23, 0);
+  width: 240px;
+  height: 300px;
+}
+
+.wrapper::-webkit-scrollbar {
+  height: 7px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+  background: #eeeeee;
+  border: 4px solid transparent;
+  background-clip: content-box;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+#click2 {
+  position: absolute;
+  top: 14%;
+  left: -3%;
+
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(136, 136, 136, 0);
+  border-left: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  cursor: pointer;
+}
+
+#click {
+  position: absolute;
+  top: 13%;
+  right: -4%;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 1, 1, 0);
+  border: 1px solid rgba(136, 136, 136, 0);
+  border-right: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  cursor: pointer;
+}
+
+#click:hover,
+#click2:hover {
+  opacity: 0.8;
+}
+
+.right-arrow {
+  background: url(https://img.icons8.com/ios-glyphs/100/000000/circled-chevron-right.png)
+    no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: 40%;
+}
+
+.left-arrow {
+  background: url(https://img.icons8.com/ios-glyphs/100/000000/circled-chevron-left.png)
+    no-repeat;
+  background-position: 50% 50%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: 40%;
+}
+
+.course_image {
+  width: 240px;
+  height: 135px;
+  border: 1px solid rgba(129, 129, 129, 0.432);
+}
+
+.course_name {
+  font-size: larger;
+  background-color: rgba(112, 15, 240, 0);
+  margin-bottom: -13px;
+  margin-top: -0.0001px;
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02rem;
+  height: 2.4em;
+  overflow: hidden;
+  width: 240px;
+}
+
+.instructur {
+  color: #1c1d1f;
+  background-color: rgba(255, 127, 80, 0);
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-size: 13px;
+  letter-spacing: -0.02rem;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.rating {
+  color: #b4690e;
+  background-color: rgba(0, 255, 255, 0);
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.sales {
+  color: #6a6f73;
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 100;
+}
+.price {
+  background-color: rgba(184, 135, 11, 0);
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+}
+
+
+/* course item ends */

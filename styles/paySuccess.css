@@ -1,0 +1,54 @@
+body{
+    padding: 5%;
+}
+.container{
+    border-radius: 20%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+    width: 100px;
+}
+span>img{
+    width: 30px;
+}
+#bought{
+    border: 2px double black;
+    border-radius: 20%;
+    box-shadow: 10px 10px whitesmoke;
+    padding: 3%;
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+div+p{
+    font-size: 22px;
+}
+.animateBottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+.blueBtn{
+    background-color: #a435f0;
+    border-color: transparent;
+    padding: 4%;
+    width: 80%;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 5% 0%;
+    border-radius: 10px;
+}
+.blueBtn:hover{
+  background-color: #581C7E;
+}  

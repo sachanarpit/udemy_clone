@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/header.css" >
+    <link rel="stylesheet" href="../styles/login.css">
+
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+</head>
+<body>
+    
+   <!-- this is header -->
+   <div id="header">
+    <div id="top-bar">
+      <!--Main logo of website-->
+      <div class="logo">
+        <img class="btnH"
+          src="https://i.ibb.co/QnJ7Bws/default-meta-image-v2-2-1-removebg-preview.png"
+          alt="udemy"
+          title="udemy logo"
+          width="100"
+        />
+      </div>
+
+      <!--Main maineu of website-->
+      <div class="hoover_1">
+        <ul>
+          <li style="margin-top: 15%;"><a href="">Categories</a>
+            <div class="hoover_2">
+              <ul>
+        
+                <li class="hoover_3"><a href="">Development</a>
+                  <div class="hoover_4">
+                    <ul>
+                      <li class="hoover_5"><a href="">Web Development</a>
+                        <div class="hoover_6">
+                          <ul>
+                            <li>
+                              <h3>Popular topics</h3>
+                            </li>
+        
+                            <li><a href="">JavaScript</a></li>
+        
+                            <li><a href="">React</a></li>
+        
+                            <li><a href="">Angular</a></li>
+        
+                            <li><a href="">CSS</a></li>
+        
+                            <li><a href="">Django</a></li>
+        
+                            <li><a href="">PHP</a></li>
+        
+                            <li><a href="">Node.js</a></li>
+        
+                            <li><a href="">WordPress</a></li>
+                          </ul>
+                        </div>
+                      </li>
+        
+                      <li><a href="">Data Science</a></li>
+        
+                      <li><a href="">Mobile Development</a></li>
+        
+                      <li><a href="">programming Languages</a></li>
+        
+                      <li><a href="">Game Development</a></li>
+        
+                      <li><a href="">Database Design & Development</a></li>
+        
+                      <li><a href="">Software Testing</a></li>
+        
+                      <li><a href="">Software Engineering</a></li>
+        
+                      <li><a href="">Software Development Tools</a></li>
+        
+                      <li><a href="">No-Code Development</a></li>
+                    </ul>
+                  </div>
+                </li>
+        
+                <li><a href="">Business</a></li>
+        
+                <li><a href="">Finance & Accounting</a></li>
+        
+                <li><a href="">IT & Software</a></li>
+        
+                <li><a href="">office productivity</a></li>
+        
+                <li><a href="">Personal Development</a></li>
+        
+                <li><a href="">Design</a></li>
+        
+                <li><a href="">Marketing</a></li>
+        
+                <li><a href="">Lifestyle</a></li>
+        
+                <li><a href="">Health & Fitness</a></li>
+        
+                <li><a href="">Music</a></li>
+        
+                <li><a href="">Teaching & Academics</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!--search bar of website-->
+      <div class="search-box">
+        <form class="search-container">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search for anything"
+          />
+        </form>
+      </div>
+
+      <!-- udemy Business -->
+      <div class="Bcm-instructor-btn">Udemy Business</div>
+
+      <!--Become An instructor button-->
+      <div class="Bcm-instructor-btn">Teach on Udemy</div>
+
+      <!--Shopping cart button-->
+      <div class="shopping-cart-btn">
+        <img
+          src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png"
+        />
+      </div>
+
+      <!-- sign Up  -->
+      <div class="header_signup_btn">Sign up</div>
+
+      <!-- log in  -->
+      <div class="header_login_btn">log in</div>
+      <!--Nottification Button-->
+      <div class="notification-btn"></div>
+
+      <!--dark mode-->
+      <!-- <div class="account-detail-btn"><button onclick="myDarkMode()">Toggle dark mode</button></div> -->
+    </div>
+  </div>
+
+
+
+
+    <div class='login-cont'>
+        <div class='step1'>Login In to Your  Udemy account</div>
+        <div class='fbcolor forone'>
+            <div class='fbcolor-inside'><img class='img1fb'src="https://img.icons8.com/color-glass/48/000000/facebook.png" /><div class='sss2'>Continue with Facebook</div></div>
+        <div class='fbcolor ' >
+            <div class='colorforthis'><img src="https://img.icons8.com/ios-glyphs/30/000000/google-logo--v1.png" width=24 height=24/><div class='sss1'>Continue with Google</div></div>
+        </div>
+        <div class='fbcolor '>
+            <div class='colorforthis'><img src="https://img.icons8.com/ios-glyphs/48/000000/mac-os.png" width=24 height=24/><div class='sss1'>continue with Apple</div></div>
+        
+        </div>
+        <form id='form' onsubmit="login(event)">
+            <label for='email1'></label>
+            <input type='text' id='Email' class='usermail' placeholder="Email"></input>
+            <label for='password1'></label>
+            <input type='password' id='password' class='pwdd' placeholder="Password"></input>
+
+
+            <button class=' newlogclass blueBtn' id="logIn" >Log in </button>
+
+            
+            <div class='extraafter dj1'><div>or<span> Forgot Password</span></div></div>
+            <div class='extraafter dj2'>Don't have an account? <span onclick="signupPage()">Sign up</span></div>
+            <div class='extraafter dj3'>Log in with your organization</div>
+        </form>
+        
+
+        
+
+
+
+    </div>
+    <script src="../scripts/mix.js"></script>
+</body>
+</html>
+ 
+
+<script>
+  function login(e) {
+    e.preventDefault();
+    const admins = JSON.parse(localStorage.getItem("userdetails"));
+
+    const form = document.getElementById("form");
+    const user = form.Email.value;
+    const pass = form.password.value;
+
+    for (let i = 0; i < admins.length; i++) {
+      let u = admins[i].mail;
+      let p = admins[i].password;
+
+      if (u == user && p == pass) {
+        window.location.href = "cart.html";
+        localStorage.setItem("loggedIn", true);
+        break;
+      } else {
+        alert("please type correct username/password");
+      }
+    }
+  }
+</script>
