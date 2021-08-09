@@ -36,7 +36,7 @@ const courses2 = [
   {
     course_name: "2021 Complete Python Bootcamp From Zero to Hero in Python",
     teacher: "Jose portila",
-    img: `course_img/img1.jpg`,
+    img: `../course_img/img1.jpg`,
     rating: 4.5,
     noOfRating: 373393,
     price: 4480,
@@ -54,7 +54,7 @@ const courses2 = [
   {
     course_name: "Machine Learning A-Z™: Hands-On Python & R In Data Science",
     teacher: "Kirill Eremenko, DataScience Support, Ligency team",
-    img: "course_img/img2.jpg",
+    img: "../course_img/img2.jpg",
     rating: 4.5,
     noOfRating: 148286,
     price: 4480,
@@ -70,7 +70,7 @@ const courses2 = [
   {
     course_name: "Python for Data Science and Machine Learning Bootcamp",
     teacher: "Jose Portila",
-    img: "course_img/img3.jpg",
+    img: "../course_img/img3.jpg",
     rating: 4.3,
     noOfRating: 37393,
     price: 4480,
@@ -86,7 +86,7 @@ const courses2 = [
   {
     course_name: "Learn Python Programming Masterclass",
     teacher: "Tim, Kirill Eremenko, DataScience Support, Ligency team ",
-    img: "course_img/img4.jpg",
+    img: "../course_img/img4.jpg",
     rating: 4.5,
     noOfRating: 73393,
     price: 4480,
@@ -105,7 +105,7 @@ const courses2 = [
   {
     course_name: "The Python Mega Course: Build 10 Real World Applications",
     teacher: "Ardit",
-    img: "course_img/img5.jpg",
+    img: "../course_img/img5.jpg",
     rating: 4,
     noOfRating: 37393,
     price: 4480,
@@ -122,7 +122,7 @@ const courses2 = [
   {
     course_name: "JavaScript - The Complete Guide 2021 (Beginner + Advanced)",
     teacher: "Andrie",
-    img: "course_img/img6.jpg",
+    img: "../course_img/img6.jpg",
     rating: 4,
     noOfRating: 37333,
     price: 4480,
@@ -138,7 +138,7 @@ const courses2 = [
   {
     course_name: "The Modern Javascript Bootcamp Course (2021)",
     teacher: "Andrie",
-    img: "course_img//img7.jpg",
+    img: "../course_img//img7.jpg",
     rating: 4,
     noOfRating: 37333,
     price: 4480,
@@ -154,7 +154,7 @@ const courses2 = [
   {
     course_name: "R Programming A-Z™: R For Data Science With Real Exercises!",
     teacher: "Andrie",
-    img: "course_img/img8.jpg",
+    img: "../course_img/img8.jpg",
     rating: 4,
     noOfRating: 37333,
     price: 4480,
@@ -170,7 +170,7 @@ const courses2 = [
   {
     course_name: "Machine Learning A-Z™: Hands-On Python & R In Data Science",
     teacher: "Andrie",
-    img: "course_img/img9.jpg",
+    img: "../course_img/img9.jpg",
     rating: 4,
     noOfRating: 37333,
     price: 4480,
@@ -186,7 +186,7 @@ const courses2 = [
   {
     course_name: "The Complete Web Developer Course 2.0",
     teacher: "Jose Portila",
-    img: "course_img/img10.jpg",
+    img: "../course_img/img10.jpg",
     rating: 4.3,
     noOfRating: 37393,
     price: 4480,
@@ -204,7 +204,7 @@ const courses2 = [
 // data base end
 
 //item add on the slider starts
-if (localStorage.getItem("courseData2") == null) {
+if (!localStorage.courseData2) {
   localStorage.setItem("courseData2", JSON.stringify(courses2));
 }
 
@@ -245,8 +245,8 @@ function showCourses2(el) {
   slide.append(list);
 }
 
-function getCourses2() {
-  var data = JSON.parse(localStorage.getItem("courseData2"));
+async function getCourses2() {
+  const data = await JSON.parse(localStorage.getItem("courseData"));
 
   data.forEach(function (x) {
     showCourses2(x);

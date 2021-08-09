@@ -1,4 +1,10 @@
-const courses = [
+function clearstorage(){
+  localStorage.clear();
+  setData();
+}
+
+
+function setData(){ const courses = [
     {
       course_name: "2021 Complete Python Bootcamp From Zero to Hero in Python",
       teacher: "Jose portila",
@@ -167,4 +173,6 @@ const courses = [
     },
   ];
 
-  localStorage.setItem("courseData", JSON.stringify(courses));
+localStorage.setItem("courseData", JSON.stringify(courses));
+}
+clearstorage();
