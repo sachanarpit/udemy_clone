@@ -143,3 +143,6 @@ h3{
 #payNow>h3{
     margin-top: 5px;
 }
+select{
+    background-color: #f7f9fa;
+}
