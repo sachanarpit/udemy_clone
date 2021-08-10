@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 ### Title of Project :
@@ -45,3 +46,6 @@ After understanding the basic of HTML, CSS & js, we just try to build the websit
 - [CH N Pavan kumar](https://github.com/pavan997)
 
 - [Mani Singh](https://github.com/manisingh2160)
+=======
+# udemy_clone
+>>>>>>> 6b282016c3188eea65665d057ee75ee025596750

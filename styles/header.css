@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+  background-color: #ff000000;
+  width: 100%;
+  height: 70px;
+  border-top: 5px solid #17aa1c00;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.274);
+}
+
+.logo > img {
+  float: left;
+  width: 80px;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 1%;
+  /* margin: 10px 20px; */
+}
+/*Navigatinon of udemy sites start from here8*/
+.hoover_1 {
+  float: left;
+  margin-left: 2%;
+  width: 100px;
+  /* border:1px solid black;*/
+  height: 48px;
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.hoover_1 ul {
+  list-style-type: none;
+}
+.hoover_1 ul li a {
+  text-decoration: none;
+  color: black;
+}
+.hoover_1 ul li:hover .hoover_2 {
+  display: block;
+  position: absolute;
+  background-color: whitesmoke;
+  margin-left: -5px;
+}
+.hoover_1 ul li:hover .hoover_2 li {
+  width: 200px;
+}
+.hoover_1 ul li {
+  margin-top: 25px;
+  margin-left: 5%;
+}
+.hoover_2 {
+  display: none;
+  width: 17%;
+  height: 550px;
+  margin-top: .8%;
+}
+.hoover_3:hover .hoover_4 {
+  display: block;
+  position: absolute;
+  background-color: whitesmoke;
+  margin-top: -45px;
+  margin-left: 200px;
+  width: 270px;
+}
+.hoover_4 {
+  display: none;
+  width: 17%;
+  height: 550px;
+}
+.hoover_6 {
+  display: none;
+  height: 550px;
+}
+.hoover_5:hover .hoover_6 {
+  display: block;
+  position: absolute;
+  background-color: whitesmoke;
+  margin-top: -44px;
+  margin-left: 200px;
+  width: 270px;
+}
+
+/* search bar css  */
+
+.search-container {
+  width: 47%;
+  display: block;
+  margin: 0 auto;
+}
+
+#search-bar {
+  float: left;
+  border-radius: 25px;
+  margin-left: -23%;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #d0cfce;
+  outline: none;
+  border: 1px solid #020202;
+  color: black;
+}
+/* #search-bar:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+#search-bar::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+#search-bar::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+} */
+#search-bar:focus {
+  border: 1px solid #0202026e;
+  transition: 0.35s ease;
+  color: #000000;
+}
+
+.search-icon {
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+}
+.Bcm-instructor-btn {
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-size: 0.9rem;
+  font-weight: 400;
+  float: left;
+  margin-left: 1%;
+  margin-top: 10px;
+}
+.shopping-cart-btn {
+  float: left;
+  margin-left: 1.5%;
+}
+.shopping-cart-btn > img {
+  margin-top: 10px;
+  margin-left: 1%;
+}
+.header_login_btn {
+  float: right;
+  padding: 10px 20px 10px 20px;
+  color: #1c1d1f;
+  background-color: transparent;
+  border: 1px solid #1c1d1f;
+  margin-right: 1%;
+  margin-top: 5px;
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  cursor: pointer;
+}
+.header_login_btn:hover {
+  opacity: 0.7;
+}
+
+.header_signup_btn {
+  float: right;
+  padding: 10px 20px 10px 20px;
+  color: #ffffff;
+  background-color: black;
+  border: 1px solid #ffffff;
+  margin-right: 1%;
+  margin-top: 5px;
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btnH, .topBtn{
+  cursor: pointer;
+}

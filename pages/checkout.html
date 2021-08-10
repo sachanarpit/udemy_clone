@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <link rel="stylesheet" href="../styles/header_old.css">
+</head>
+<body>
+
+    <!-- first slider whole box starts -->
+    <div id="header">
+      <div id="top-bar">
+        <!--Main logo of website-->
+        <div class="logo topBtn" onclick="logolink()">
+          <img
+            src="https://i.ibb.co/QnJ7Bws/default-meta-image-v2-2-1-removebg-preview.png"
+            alt="udemy"
+            title="udemy logo"
+            width="100px"
+          />
+        </div>
+
+        <!--Main maineu of website-->
+        <div class="main-menu">
+          <ul class="header_ul topBtn" onclick="exploreCourses()">
+           <a href="" style="color: black; text-decoration: none;"> <li class="header_cat_list">
+              Categories
+              <ul class="header_ul sub-menu">
+                <li class="header_cat_list">
+                  Development
+                  <ul class="header_ul sub-menu-1">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+                <li class="header_cat_list">
+                  Business
+                  <ul class="header_ul sub-menu-1 any1">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+                <li class="header_cat_list">
+                  IT & Softwar
+                  <ul class="header_ul sub-menu-1 any2">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+                <li class="header_cat_list">
+                  Office Productivity
+                  <ul class="header_ul sub-menu-1 any3">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+                <li class="header_cat_list">
+                  Personal Development
+                  <ul class="header_ul sub-menu-1 any4">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </a>
+        </div>
+
+        <!--search bar of website-->
+        <div class="search-box">
+          <form class="search-container">
+            <input
+              type="text"
+              id="search-bar"
+              placeholder="Search for anything"
+            />
+          </form>
+        </div>
+
+        <!-- udemy Business -->
+        <div class="Bcm-instructor-btn topBtn">Udemy Business</div>
+
+        <!--Become An instructor button-->
+        <div class="Bcm-instructor-btn topBtn">Teach on Udemy</div>
+
+        <!--Shopping cart button-->
+        <div class="shopping-cart-btn topBtn" onclick="cartPage()">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png"
+          />
+        </div>
+
+        <!-- sign Up  -->
+        <div class="header_signup_btn topBtn" onclick="signupPage()">Sign up</div>
+
+        <!-- log in  -->
+        <div class="header_login_btn topBtn" onclick="loginPage()">Log in</div>
+        <!--Nottification Button-->
+        <div class="notification-btn"></div>
+
+        <!--dark mode-->
+        <!-- <div class="account-detail-btn"><button onclick="myDarkMode()">Toggle dark mode</button></div> -->
+      </div>
+    </div>
+      
+
+    <div></div>
+
+<!-- this is checkout part -->
+
+    <div class="container2">
+        <div id="pay">
+            <h1>Checkout</h1>
+            <form>
+                <p>Billing Address</p>
+                <div class="sideBy1">
+                    <div class="inputBox">
+                    <label for="country">Country</label>
+                    <select id="country" disabled name="userInput">
+                        <option value="" disabled>Please Select...</option>
+                        <option value="India">India</option>
+                    </select>
+                    </div>
+                    <div class="inputBox">
+                    <label for="state">State / Union Territory</label>
+                    <select id="state" name="userInput">
+                        <option value="" disabled selected>Please Select...</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                    </div>
+                </div>
+            </form>
+            <!-- payment type -->
+            <form id="payMethod">
+                <div>
+                    <span>
+                        <input type="radio" name="payBy" id="card" class="check" checked>
+                        <label for="card">Credit or Debit Card
+                            <img class="icon" src="https://www.udemy.com/staticx/udemy/images/v8/card-mastercard.svg" alt="MasterCard">
+                            <img class="icon" src="https://www.udemy.com/staticx/udemy/images/v8/card-visa.svg" alt="VISA">
+                            <img class="icon" src="	https://www.udemy.com/staticx/udemy/images/v8/card-amex.svg" alt="AMEX">
+                            <img class="icon" src="	https://www.udemy.com/staticx/udemy/images/v8/card-rupay.svg" alt="RuPay">
+                        </label>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <input type="radio" name="payBy" id="netBanking" class="check">
+                        <label for="netBanking">Pay with Net Banking</label>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <input type="radio" name="payBy" id="upi" class="check">
+                        <label for="upi">Pay with UPI
+                            <img class="icon" src="https://www.udemy.com/staticx/udemy/images/v8/hpp-upi.svg" alt="UPI">
+                        </label>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <input type="radio" name="payBy" id="paytm" class="check">
+                        <label for="paytm">Pay with PayTM
+                            <img class="icon" src="https://www.udemy.com/staticx/udemy/images/v8/hpp-paytm.svg" alt="PayTM">
+                        </label>
+                    </span>
+                </div>
+            </form>
+            <!-- payment method details -->
+            <div class="shBorder">
+                <form id="forCard">
+                    <div class="inputBox">
+                        <label for="name">Name on Card</label>
+                        <input class="input bigI" type="text" id="name" name="userInput">
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardNo">Card Number</label>
+                        <input class="input bigI" type="number" id="cardNo" name="userInput">
+                    </div>
+                    <div class="sideBy2">
+                        <div class="inputBox bdMerge1">
+                                    <label for="month">MM</label>
+                                    <select id="month" name="userInput">
+                                        <option value='' selected disabled>MM</option>
+                                        <option value='01'>01</option>
+                                        <option value='02'>02</option>
+                                        <option value='03'>03</option>
+                                        <option value='04'>04</option>
+                                        <option value='05'>05</option>
+                                        <option value='06'>06</option>
+                                        <option value='07'>07</option>
+                                        <option value='08'>08</option>
+                                        <option value='09'>09</option>
+                                        <option value='10'>10</option>
+                                        <option value='11'>11</option>
+                                        <option value='12'>12</option>
+                                    </select>
+                        </div>
+                        <div class="inputBox bdMerge2">
+                            <label for="year">YYYY</label>
+                            <select id="year" name="userInput">
+                                <option value="" selected disabled>YYYY</option>
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                                <option value="2032">2032</option>
+                                <option value="2033">2033</option>
+                                <option value="2034">2034</option>
+                                <option value="2035">2035</option>
+                                <option value="2036">2036</option>
+                                <option value="2037">2037</option>
+                                <option value="2038">2038</option>
+                                <option value="2039">2039</option>
+                                <option value="2040">2040</option>
+                                <option value="2041">2041</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cvv">Security Code</label>
+                            <input class="input smallI" type="number" id="cvv" name="userInput">
+                        </div>
+                    </div>
+                    <div>
+                        <input id="rememberCard" type="checkbox">
+                        <label for="rememberCard">Remember This Card</label>
+                    </div>
+                </form>
+                <form id="forNet">
+                    <p>In order to complete your transaction, we will transfer you over to Adyen's secure servers.</p>
+                    <p>Select your bank from the drop-down list and click proceed to continue with your payment.</p>
+                    <select class="inputBox">
+                        <option value="" selected disabled="">Please choose one</option>
+                        <option value="ALB_DIRECT">Allahabad Bank </option>
+                        <option value="APG_DIRECT">Andhra Pragathi Grameena Bank</option>
+                        <option value="AUB_DIRECT">AU Small Finance Bank</option>
+                        <option value="UTI_DIRECT">Axis Bank </option>
+                        <option value="BDN_DIRECT">Bandhan bank</option>
+                        <option value="BBK_DIRECT">Bank of Bahrain and Kuwait</option>
+                        <option value="BBR_DIRECT">Bank of Baroda - Retail Banking</option>
+                        <option value="BOM_DIRECT">Bank of Maharashtra</option>
+                        <option value="BCB_DIRECT">Bassien Catholic Co-Operative Bank </option>
+                        <option value="CNB_DIRECT">Canara Bank</option>
+                        <option value="SYD_DIRECT">Canara Bank (e-Syndicate)</option><option value="CSB_DIRECT">Catholic Syrian Bank</option><option value="CBI_DIRECT">Central Bank of India</option><option value="CUB_DIRECT">City Union Bank</option><option value="COB_DIRECT">Cosmos Bank</option><option value="DEN_DIRECT">Dena Bank</option><option value="DBK_DIRECT">Deutsche Bank</option><option value="DCB_DIRECT">Development Credit Bank</option><option value="DLB_DIRECT">Dhanlakshmi Bank - Retail Net Banking</option><option value="DBS_DIRECT">digibank by DBS</option><option value="EQB_DIRECT">Equitas Small Finance Bank</option><option value="ESF_DIRECT">ESAF Small Finance Bank</option><option value="FBK_DIRECT">Federal Bank</option><option value="FNC_DIRECT">Fincare Bank</option><option value="HDF_DIRECT">HDFC Bank</option><option value="ICI_DIRECT">ICICI Bank </option><option value="IDB_DIRECT">IDBI Bank - Retail Net Banking</option><option value="IDN_DIRECT">IDFC FIRST Bank</option><option value="INB_DIRECT">Indian Bank</option><option value="IOB_DIRECT">Indian Overseas Bank</option><option value="IDS_DIRECT">IndusInd Bank</option><option value="JKB_DIRECT">Jammu &amp; Kashmir Bank</option><option value="JNB_DIRECT">Jana Small Finance Bank</option><option value="JSB_DIRECT">Janata Sahakari Bank Ltd Pune</option><option value="KJB_DIRECT">Kalyan Janata Sahakari Bank</option><option value="KBL_DIRECT">Karnataka Bank Ltd</option><option value="PKB_DIRECT">Karnataka Gramin Bank</option><option value="KVG_DIRECT">Karnataka Vikas Grameena Bank</option>
+                        <option value="KVB_DIRECT">Karur Vysya Bank</option><option value="162_DIRECT">Kotak Bank</option><option value="LVR_DIRECT">Laxmi Vilas Bank - Retail</option><option value="NKB_DIRECT">NKGSB Co-op Bank</option><option value="NEB_DIRECT">North East Small Finance Bank</option><option value="OBC_DIRECT">PNB (Erstwhile-Oriental Bank of Commerce)</option>
+                        <option value="UNI_DIRECT">PNB (Erstwhile-United Bank of India)</option><option value="PMC_DIRECT">Punjab &amp; Maharastra Co-op Bank</option><option value="PSB_DIRECT">Punjab &amp; Sind Bank</option><option value="PNB_DIRECT">Punjab National Bank - Retail Banking</option><option value="RBL_DIRECT">RBL Bank Limited</option><option value="SWB_DIRECT">Saraswat Bank</option><option value="SVC_DIRECT">Shamrao Vithal Co-op Bank</option><option value="SHB_DIRECT">Shivalik Mercantile Cooperative Bank Ltd</option><option value="SIB_DIRECT">South Indian Bank</option><option value="SCB_DIRECT">Standard Chartered Bank</option><option value="SBI_DIRECT">State Bank of India</option><option value="SRB_DIRECT">Suryoday Small Finance Bank</option><option value="TNC_DIRECT">Tamil Nadu State Co-operative Bank</option><option value="TMB_DIRECT">Tamilnad Mercantile Bank Ltd</option><option value="TBB_DIRECT">Thane Bharat Sahakari Bank Ltd</option><option value="KLB_DIRECT">The Kalupur Commercial Co-operative Bank</option><option value="MSB_DIRECT">The Mehsana Urban Co Op Bank Ltd</option><option value="TJB_DIRECT">TJSB Bank</option><option value="UCO_DIRECT">UCO Bank</option><option value="UBI_DIRECT">Union Bank of India</option><option value="ADB_DIRECT">Union Bank of India (Erstwhile Andhra Bank)</option><option value="CRP_DIRECT">Union Bank of India (Erstwhile Corporation Bank)</option><option value="VRB_DIRECT">Varachha Co-operative Bank Limited</option><option value="VJB_DIRECT">Vijaya Bank</option><option value="YBK_DIRECT">Yes Bank</option><option value="ZOB_DIRECT">Zoroastrian Co-operative Bank Limited</option>
+                    </select>
+                </form>
+                <form id="forUpi">
+                    <p>In order to complete your transaction, we will transfer you over to Adyen's secure servers.</p>
+                </form>
+                <form id="forPaytm">
+                    <p>In order to complete your transaction, we will transfer you over to Adyen's secure servers.</p>
+                </form>
+                <div class="secure">
+                    <img src="../images/lock.png">
+                    <p>Secure Connection</p>
+                </div>
+            </div>
+            <div>
+                <h2>Order Details</h2>
+                <div id="buyThis"></div>
+            </div>
+        </div>
+        <div id="payNow" class="shBorder">
+            <h2>Summary</h2>
+            <div class="priced">
+                <span class="priced1">Origional Price:</span>
+                <span><span>₹</span><span id="origionalPrice"></span></span>
+            </div>
+            <div class="nothing"></div>
+            <h3 class="priced">
+                <span class="priced1">Total:</span>
+                <span><span>₹</span><span id="totalPrice"></span></span>
+            </h3>
+            <p>Udemy is required by law to collect applicable transaction taxes for purchases made in certain tax jurisdictions.</p>
+            <p><span>By completing your purchase you agree to these</span><span><a href="">Terms of Service</a></span></p>
+            <button id="Payment" class="blueBtn">Complete Payment</button>
+        </div>
+    </div>
+    <script src="../scripts/checkout.js"></script>
+    <script src="../scripts/mix2.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+    <link rel="stylesheet" href="../styles/paySuccess.css">
+</head>
+<body onload="myFunction()" style="margin:0;">
+    <div  id="myDiv" class="animateBottom container">
+        <img src="../images/checked.png" >
+        <h1><span>Payment Successful</span><span><img src="../images/success.png"></span></h1>
+        <p>Now, you can access the following Couses:</p>
+        <div id="bought"></div>
+        <p>Keep Learning Something New Everyday</p>
+        <button class="blueBtn btnH">Go Back to Home Page</button>
+    </div>
+</body>
+</html>
+<script>
+    let course = document.getElementById("bought");
+    let data = JSON.parse(localStorage.getItem("cart"));
+    data.forEach(function(x){
+        let p = document.createElement("p");
+        p.innerText = x;
+        course.append(p);
+    });
+    let myVar;
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("myDiv").style.display = "block";
+    }
+      //home button ->go to main page
+    const btnH = document.getElementsByClassName("btnH");
+    for(let i=0;i<btnH.length;i++){
+        btnH[i].addEventListener("click", function(){
+            window.location.href = "../index.html";
+        });
+    }
+    function clearCart(){
+        localStorage.cart = null;
+    }
+    clearCart();
+</script>

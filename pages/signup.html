@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+    <link rel="stylesheet" href="../styles/header_old.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body>
+    
+  
+    <!-- first slider whole box starts -->
+    <div id="header">
+      <div id="top-bar">
+        <!--Main logo of website-->
+        <div class="logo topBtn" onclick="logolink()">
+          <img
+            src="https://i.ibb.co/QnJ7Bws/default-meta-image-v2-2-1-removebg-preview.png"
+            alt="udemy"
+            title="udemy logo"
+            width="100px"
+          />
+        </div>
+
+        <!--Main maineu of website-->
+        <div class="main-menu">
+          <ul class="header_ul topBtn" onclick="exploreCourses()">
+           <a href="" style="color: black; text-decoration: none;"> <li class="header_cat_list">
+              Categories
+              <ul class="header_ul sub-menu">
+                <li class="header_cat_list">
+                  Development
+                  <ul class="header_ul sub-menu-1">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+                <li class="header_cat_list">
+                  Business
+                  <ul class="header_ul sub-menu-1 any1">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+                <li class="header_cat_list">
+                  IT & Softwar
+                  <ul class="header_ul sub-menu-1 any2">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+                <li class="header_cat_list">
+                  Office Productivity
+                  <ul class="header_ul sub-menu-1 any3">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+                <li class="header_cat_list">
+                  Personal Development
+                  <ul class="header_ul sub-menu-1 any4">
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                    <li class="header_cat_list">All development</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          </a>
+        </div>
+
+        <!--search bar of website-->
+        <div class="search-box">
+          <form class="search-container">
+            <input
+              type="text"
+              id="search-bar"
+              placeholder="Search for anything"
+            />
+          </form>
+        </div>
+
+        <!-- udemy Business -->
+        <div class="Bcm-instructor-btn topBtn">Udemy Business</div>
+
+        <!--Become An instructor button-->
+        <div class="Bcm-instructor-btn topBtn">Teach on Udemy</div>
+
+        <!--Shopping cart button-->
+        <div class="shopping-cart-btn topBtn" onclick="cartPage()">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png"
+          />
+        </div>
+
+        <!-- sign Up  -->
+        <div class="header_signup_btn topBtn" onclick="signupPage()">Sign up</div>
+
+        <!-- log in  -->
+        <div class="header_login_btn topBtn" onclick="loginPage()">Log in</div>
+        <!--Nottification Button-->
+        <div class="notification-btn"></div>
+
+        <!--dark mode-->
+        <!-- <div class="account-detail-btn"><button onclick="myDarkMode()">Toggle dark mode</button></div> -->
+      </div>
+    </div>
+
+
+
+    <div class='login-cont'>
+        <div class='step1'>Sign Up and Start Learning!</div>
+        <form id='mainForm'>
+            <label for='name'></label>
+            <input type='text' id=name class='usermail' placeholder="Name"></input>
+
+            <label for='Email'></label>
+            <input type='text' id=Email class='usermail' placeholder="Email"></input>
+            <label for='password'></label>
+            <input type='password' id='password' class='pwdd' placeholder="Password"></input>
+            <input type="checkbox" id="checkp" name="checkp" >
+            <label for="checkp">I’m in for emails with exciting discounts and personalized recommendations</label>
+            
+            <button class=' newlogclass blueBtn' onclick="SignUp()">Sign up </button>
+
+            <div class='tandc'>By signing up, you agree to our <span>Terms of Use</span>and <span>Privacy Policy.</span></div>
+            <div class='exitto'>Already have an account?<span onclick="loginPage()"> Log In</span></div>
+        </form>
+    </div>
+<script src="../scripts/mix2.js"></script>
+</body>
+</html>
+
+
+<script>
+function SignUp() {
+  var form = document.getElementById("mainForm");
+  let name = form.name.value;
+
+  let mail = form.Email.value;
+  let password = form.password.value;
+  if (name != ""  && password != "" && mail != "") {
+    let userdata = {
+      name,
+      mail,
+      password
+    };
+
+    let arr;
+    arr = localStorage.getItem("userdetails");
+    if (arr == null) {
+      arr = [];
+    } else {
+      arr = JSON.parse(localStorage.getItem("userdetails"));
+    }
+
+    arr.push(userdata);
+
+    localStorage.setItem("userdetails", JSON.stringify(arr));
+    window.location.href = "login.html";
+  }
+}
+</script>

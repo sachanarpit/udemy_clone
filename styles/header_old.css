@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+  background-color: #ff000000;
+  width: 100%;
+  height: 70px;
+  border-top: 5px solid #17aa1c00;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.274);
+}
+
+.logo > img {
+  float: left;
+  width: 80px;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 1%;
+  /* margin: 10px 20px; */
+}
+/*Navigatinon of udemy sites start from here8*/
+.main-menu {
+  float: left;
+  width: 100px;
+  /* border:1px solid black;*/
+  height: 48px;
+  border-left: 1px solid rgba(255, 255, 255, 0.45);
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.main-menu .header_ul .header_cat_list:hover {
+  background-color: #f4f4f4;
+}
+
+.main-menu > .header_ul {
+  list-style-type: none;
+  z-index: 1;
+  background-color: wheat;
+}
+.main-menu .header_ul .header_cat_list {
+  width: 100px;
+  display: block;
+  height: 47px;
+  padding-top: 15px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.main-menu .header_ul .header_cat_list .header_ul {
+  display: none;
+  margin-top: 15px;
+  width: 00px;
+
+  clear: both;
+}
+
+.main-menu .header_ul .header_cat_list:hover .header_ul {
+  display: block;
+}
+.main-menu .header_ul .header_cat_list .sub-menu {
+  border-top: 1px solid #ffffff;
+  width: 240px;
+}
+.main-menu .header_ul .header_cat_list .header_ul .header_cat_list {
+  display: block;
+  padding-left: 10px;
+  text-align: left;
+  width: 240px;
+  height: 40px;
+}
+.main-menu
+  .header_ul
+  .header_cat_list:hover
+  .header_ul
+  .header_cat_list
+  .header_ul {
+  display: none;
+}
+.main-menu
+  .header_ul
+  .header_cat_list:hover
+  .sub-menu
+  .header_cat_list:hover
+  .sub-menu-1 {
+  display: block;
+  float: right;
+  margin-left: 10px;
+  margin-top: -16px;
+  padding: 0px;
+}
+.main-menu
+  .header_ul
+  .header_cat_list:hover
+  .sub-menu
+  .header_cat_list:hover
+  .any1 {
+  margin-top: -80px;
+}
+.main-menu
+  .header_ul
+  .header_cat_list:hover
+  .sub-menu
+  .header_cat_list:hover
+  .any2 {
+  margin-top: -96px;
+}
+.main-menu
+  .header_ul
+  .header_cat_list:hover
+  .sub-menu
+  .header_cat_list:hover
+  .any3 {
+  margin-top: -136px;
+}
+.main-menu
+  .header_ul
+  .header_cat_list:hover
+  .sub-menu
+  .header_cat_list:hover
+  .any4 {
+  margin-top: -176px;
+}
+.any1 {
+  background-color: #02a2a500;
+}
+#top-bar {
+  margin-top: 5px;
+}
+/* search bar css  */
+
+.search-container {
+  width: 47%;
+  display: block;
+  margin: 0 auto;
+}
+
+#search-bar {
+  float: left;
+  border-radius: 25px;
+  margin-left: -23%;
+  width: 100%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #d0cfce;
+  outline: none;
+  border: 1px solid #020202;
+  color: black;
+}
+/* #search-bar:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+#search-bar::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+#search-bar::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+} */
+#search-bar:focus {
+  border: 1px solid #0202026e;
+  transition: 0.35s ease;
+  color: #000000;
+}
+
+.search-icon {
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+}
+.Bcm-instructor-btn {
+  font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui,
+    Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-size: 0.9rem;
+  font-weight: 400;
+  float: left;
+  margin-left: 1%;
+  margin-top: 10px;
+}
+.shopping-cart-btn {
+  float: left;
+  margin-left: 1.5%;
+}
+.shopping-cart-btn > img {
+  margin-top: 10px;
+  margin-left: 1%;
+}
+.header_login_btn {
+  float: right;
+  padding: 10px 20px 10px 20px;
+  color: #1c1d1f;
+  background-color: transparent;
+  border: 1px solid #1c1d1f;
+  margin-right: 1%;
+  margin-top: 5px;
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+}
+.header_login_btn:hover {
+  opacity: 0.7;
+}
+
+.header_signup_btn {
+  float: right;
+  padding: 10px 20px 10px 20px;
+  color: #ffffff;
+  background-color: black;
+  border: 1px solid #ffffff;
+  margin-right: 1%;
+  margin-top: 5px;
+  font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+    segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji,
+    segoe ui symbol;
+  font-weight: 700;
+}
+.topBtn{
+  cursor: pointer;
+}

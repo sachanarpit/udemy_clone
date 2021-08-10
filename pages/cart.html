@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+    <link rel="stylesheet" href="../styles/cart.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/slider.css">
+    <link rel="stylesheet" href="../styles/header.css">
+</head>
+<body>
+    
+  <!-- this is header -->
+  <div id="header">
+    <div id="top-bar">
+      <!--Main logo of website-->
+      <div class="logo topBtn" onclick="logolink()">
+        <img
+          src="https://i.ibb.co/QnJ7Bws/default-meta-image-v2-2-1-removebg-preview.png"
+          alt="udemy"
+          title="udemy logo"
+          width="100"
+        />
+      </div>
+
+      <!--Main maineu of website-->
+      <div class="hoover_1">
+        <ul>
+          <li style="margin-top: 15%;"><a href="categories.html" class="topBtn">Categories</a>
+            <div class="hoover_2">
+              <ul>
+        
+                <li class="hoover_3"><a href="">Development</a>
+                  <div class="hoover_4">
+                    <ul>
+                      <li class="hoover_5"><a href="">Web Development</a>
+                        <div class="hoover_6">
+                          <ul>
+                            <li>
+                              <h3>Popular topics</h3>
+                            </li>
+        
+                            <li><a href="">JavaScript</a></li>
+        
+                            <li><a href="">React</a></li>
+        
+                            <li><a href="">Angular</a></li>
+        
+                            <li><a href="">CSS</a></li>
+        
+                            <li><a href="">Django</a></li>
+        
+                            <li><a href="">PHP</a></li>
+        
+                            <li><a href="">Node.js</a></li>
+        
+                            <li><a href="">WordPress</a></li>
+                          </ul>
+                        </div>
+                      </li>
+        
+                      <li><a href="">Data Science</a></li>
+        
+                      <li><a href="">Mobile Development</a></li>
+        
+                      <li><a href="">programming Languages</a></li>
+        
+                      <li><a href="">Game Development</a></li>
+        
+                      <li><a href="">Database Design & Development</a></li>
+        
+                      <li><a href="">Software Testing</a></li>
+        
+                      <li><a href="">Software Engineering</a></li>
+        
+                      <li><a href="">Software Development Tools</a></li>
+        
+                      <li><a href="">No-Code Development</a></li>
+                    </ul>
+                  </div>
+                </li>
+        
+                <li><a href="">Business</a></li>
+        
+                <li><a href="">Finance & Accounting</a></li>
+        
+                <li><a href="">IT & Software</a></li>
+        
+                <li><a href="">office productivity</a></li>
+        
+                <li><a href="">Personal Development</a></li>
+        
+                <li><a href="">Design</a></li>
+        
+                <li><a href="">Marketing</a></li>
+        
+                <li><a href="">Lifestyle</a></li>
+        
+                <li><a href="">Health & Fitness</a></li>
+        
+                <li><a href="">Music</a></li>
+        
+                <li><a href="">Teaching & Academics</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!--search bar of website-->
+      <div class="search-box">
+        <form class="search-container">
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search for anything"
+          />
+        </form>
+      </div>
+
+      <!-- udemy Business -->
+      <div class="Bcm-instructor-btn topBtn">Udemy Business</div>
+
+      <!--Become An instructor button-->
+      <div class="Bcm-instructor-btn topBtn">Teach on Udemy</div>
+
+      <!--Shopping cart button-->
+      <div class="shopping-cart-btn topBtn" onclick="cartPage()">
+        <img
+          src="https://img.icons8.com/material-outlined/24/000000/shopping-cart--v1.png"
+        />
+      </div>
+
+      <!-- sign Up  -->
+      <div class="header_signup_btn topBtn" onclick="signupPage()">Sign Up</div>
+
+      <!-- log in  -->
+      <div class="header_login_btn topBtn" onclick="loginPage()">Log In</div>
+      <!--Nottification Button-->
+      <div class="notification-btn"></div>
+
+      <!--dark mode-->
+      <!-- <div class="account-detail-btn"><button onclick="myDarkMode()">Toggle dark mode</button></div> -->
+    </div>
+  </div>
+      
+
+
+    <h1 class="header23">Shopping Cart</h1>
+    <div id="cartItems" class="section cart">
+        <div>
+            <p><span id="cartTotal">0</span><span>Courses in Cart</span></p>
+            <div class="bdLight">
+                <div id="emptyCart" class="empty">
+                    <img src="../images/emptyCart.jpg">
+                    <p>Your cart is empty. Keep shopping to find a course!</p>
+                    <button class="btn btnH blueBtn">Keep shopping</button>
+                </div>
+                <div id="cart" class="nonEmpty"></div>
+            </div>
+            <p>Saved for later</p>
+            <div id="savedItems" class="section cart saved">
+                <p id="saved0">You haven't saved any courses for later.</p>
+                <div id="saved" class="bdLight"></div>
+            </div>
+            <div id= "showOnLog">
+                <p>Recently wishlisted</p>
+                <div id="savedItems" class="section cart saved">
+                    <p id="wished0">You haven't added any courses to your wishlist.</p>
+                    <div id="wished" class="bdLight"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ckeckout nonEmpty">
+            <p>Total:</p>
+            <h1><span>₹</span><span id="totalBill">0</span></h1>
+            <div id="priceOff"></div>
+            <button id="checkout" type="submit" class="btn blueBtn maxWidth">Checkout</button>
+            <h3>Promotions</h3>
+            <div><a class="cross" href=""><img class="icon" src="../images/cancel.png"></a><span id="couponName">No Coupon</span><span> is Applied</span></div>
+            <form id="coupon">
+                <input type="text" placeholder="Enter Coupon" id="couponCode">
+                <input class="btn blueBtn couponBtn" type="submit" value="Apply" id="applyCoupon">
+            </form>
+            <!-- <button class="cartBtn">Cart</button> -->
+        </div>
+    </div>
+
+    <!-- slider -->
+    <div class="container">
+        <div class="wrapper">
+          <div class="products">
+            <ul id="unorderedlist">
+            </ul>
+          </div>
+        </div>
+        <div id="click2"><span class="left-arrow"></span></div>
+        <div id="click"><span class="right-arrow"></div>
+      </div>
+    <!-- footer start -->
+
+    <div id="common_footer">
+      <div class="grid64">
+          <div class="listOfItems">
+              <div>
+                  <a href="">Udemy Business</a>
+                  <a href="">Teach On Udemy</a>
+                  <a href="">Get the app</a>
+                  <a href="">About us</a>
+                  <a href="">Contact us</a>                    
+              </div>
+              <div>
+                  <a href="">Careers</a>
+                  <a href="">Blog</a>
+                  <a href="">Help and Support</a>
+                  <a href="">Affiliate</a>
+              </div>
+              <div>
+                  <a href="">Terms</a>
+                  <a href="">Privacy policy</a>
+                  <a href="">Sitemap</a>
+              </div>
+          </div>
+          <div class="lang_btn">
+              <button>English</button>
+          </div>
+      </div>
+      <div class="footOfFooter">
+          <div>
+          <img class="udemy_logo btnH" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="Udemy">
+          </div>
+          <span>© 2021 Udemy, Inc.(copy)</span>
+      </div>
+  </div>
+
+  <!-- footer end -->
+
+
+
+      
+    <script type="text/javascript" src="../scripts/cart.js"></script>
+    <script type="text/javascript" src="../scripts/slider.js"></script>
+    <script type="text/javascript" src="../scripts/mix2.js"></script>
+</body>
+</html>
+
