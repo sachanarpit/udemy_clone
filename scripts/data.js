@@ -8,7 +8,7 @@ function setData(){ const courses = [
     {
       course_name: "2021 Complete Python Bootcamp From Zero to Hero in Python",
       teacher: "Jose portila",
-      img: `../course_img/img1.jpg`,
+      img: `https://i.ibb.co/0D7hP1N/img1.jpg`,
       rating: 4.5,
       noOfRating: 373393,
       price: 4480,
@@ -26,7 +26,7 @@ function setData(){ const courses = [
     {
       course_name: "Machine Learning A-Z™: Hands-On Python & R In Data Science",
       teacher: "Kirill Eremenko, DataScience Support, Ligency team",
-      img: "../course_img/img2.jpg",
+      img: "https://i.ibb.co/S0r3B99/img2.jpg",
       rating: 4.5,
       noOfRating: 148286,
       price: 4480,
@@ -42,7 +42,7 @@ function setData(){ const courses = [
     {
       course_name: "Python for Data Science and Machine Learning Bootcamp",
       teacher: "Jose Portila",
-      img: "../course_img/img3.jpg",
+      img: "https://i.ibb.co/129hnQ0/img3.jpg",
       rating: 4.3,
       noOfRating: 37393,
       price: 4480,
@@ -58,7 +58,7 @@ function setData(){ const courses = [
     {
       course_name: "Learn Python Programming Masterclass",
       teacher: "Tim, Kirill Eremenko, DataScience Support, Ligency team ",
-      img: "../course_img/img4.jpg",
+      img: "https://i.ibb.co/3vLyRhR/img4.jpg",
       rating: 4.5,
       noOfRating: 73393,
       price: 4480,
@@ -77,7 +77,7 @@ function setData(){ const courses = [
     {
       course_name: "The Python Mega Course: Build 10 Real World Applications",
       teacher: "Ardit",
-      img: "../course_img/img5.jpg",
+      img: "https://i.ibb.co/8z7rGSF/img5.jpg",
       rating: 4,
       noOfRating: 37393,
       price: 4480,
@@ -94,7 +94,7 @@ function setData(){ const courses = [
     {
       course_name: "JavaScript - The Complete Guide 2021 (Beginner + Advanced)",
       teacher: "Andrie",
-      img: "../course_img/img6.jpg",
+      img: "https://i.ibb.co/7NHZz4b/img6.jpg",
       rating: 4,
       noOfRating: 37333,
       price: 4480,
@@ -110,7 +110,7 @@ function setData(){ const courses = [
     {
       course_name: "The Modern Javascript Bootcamp Course (2021)",
       teacher: "Andrie",
-      img: "../course_img//img7.jpg",
+      img: "https://i.ibb.co/q5kzCJL/img7.jpg",
       rating: 4,
       noOfRating: 37333,
       price: 4480,
@@ -126,7 +126,7 @@ function setData(){ const courses = [
     {
       course_name: "R Programming A-Z™: R For Data Science With Real Exercises!",
       teacher: "Andrie",
-      img: "../course_img/img8.jpg",
+      img: "https://i.ibb.co/C6k5Xhp/img8.jpg",
       rating: 4,
       noOfRating: 37333,
       price: 4480,
@@ -142,7 +142,7 @@ function setData(){ const courses = [
     {
       course_name: "Machine Learning A-Z™: Hands-On Python & R In Data Science",
       teacher: "Andrie",
-      img: "../course_img/img9.jpg",
+      img: "https://i.ibb.co/zbppCD0/img9.jpg",
       rating: 4,
       noOfRating: 37333,
       price: 4480,
@@ -158,7 +158,7 @@ function setData(){ const courses = [
     {
       course_name: "The Complete Web Developer Course 2.0",
       teacher: "Jose Portila",
-      img: "../course_img/img10.jpg",
+      img: "https://i.ibb.co/gMsG3q0/img10.jpg",
       rating: 4.3,
       noOfRating: 37393,
       price: 4480,
