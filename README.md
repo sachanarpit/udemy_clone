@@ -18,7 +18,7 @@ udemy.com
 
 
 
-## Installation
+## Installation and Run Locally
 
 Install my-project with git
 
@@ -52,9 +52,12 @@ Install my-project with git
 Javascript, HTML, CSS...
 
   
-## Screenshots
+## Screenshots from our Project
 ### Home Page Screenshot
 ![home page Screenshot](https://i.ibb.co/VBY11tX/screencapture-file-D-New-folder-udemy-udemy-clone-index-html-2021-08-17-00-21-31.png?text=homepage+Screenshot+Here)
+
+### Categories Page Screenshot
+![Categories page Screenshot](https://i.ibb.co/St6rkYs/screencapture-file-D-New-folder-udemy-udemy-clone-pages-categories-html-2021-08-17-00-39-35.png?text=homepage+Screenshot+Here)
 
 ### Product page Screenshot
 ![Product page Screenshot](https://i.ibb.co/BP8x75K/screencapture-file-D-New-folder-udemy-udemy-clone-pages-product-html-2021-08-17-00-24-35.png?text=homepage+Screenshot+Here)
