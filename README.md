@@ -1,44 +1,46 @@
-<<<<<<< HEAD
 
+![Logo](https://i.ibb.co/QnJ7Bws/default-meta-image-v2-2-1-removebg-preview.png)
 
-### Title of Project :
+    
+# Project Title
+
 udemy.com
 
-### Project-Repository name:
-udemy_clone
+## Color Reference
 
-### Introduction:
-Our project is about developing the clone of the "udemy.com". Udemy is one of the top leading Edtech platform where anyone can learn skills from anywhere in the world.
-we make the Homepage ,one category page, one product page , login page , signup page , cart , checkout and payment page in 1 week.
-
-### Technology used :
-Only HTML, CSS, Javascript, localstorage are used to accomplish the project. Advance Js and DOM is also used to make it interactive.
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Primary Color and button color | ![#a529f1](https://via.placeholder.com/10/a529f1?text=+) #a529f1 |
+| Backgroud color | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Icons color | ![#eceb98](https://via.placeholder.com/10/eceb98?text=+) #eceb98 |
 
 
-### Developed by :
-Technophile group Web10 batch from Masai School.
 
-### Team Members are :
-##### Arpit Sachan
-##### Raju
-##### Mani Singh
-##### Naga Pavan Kumar Chandupatla
 
-### Purpose :
-After understanding the basic of HTML, CSS & js, we just try to build the website as similar as possible
 
-### Libraries :
-##### Google font - https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap
-##### Icons - Flat Icon -  https://www.flaticon.com/
+## Installation
 
+Install my-project with git
+
+```bash
+ git clone https://github.com/sachanarpit/udemy_clone.git
+```
+    
+## Features
+
+- Login and Sign up
+- Sorting on product Page
+- Add to cart
+- Apply the coupon on your cart 
+- Purchase the Product
+- Fullscreen mode
 ## Acknowledgements
 
  - [Udemy.com](https://www.udemy.com/)
  - [Masai School](https://masaischool.com/)
- 
-
   
 ## Authors
+
 -  [Arpit Sachan](https://github.com/sachanarpit/)
 
 - [Raju](https://github.com/rajujai)
@@ -46,6 +48,22 @@ After understanding the basic of HTML, CSS & js, we just try to build the websit
 - [CH N Pavan kumar](https://github.com/pavan997)
 
 - [Mani Singh](https://github.com/manisingh2160)
-=======
-# udemy_clone
->>>>>>> 6b282016c3188eea65665d057ee75ee025596750
+## 🛠 Skills
+Javascript, HTML, CSS...
+
+  
+## Screenshots
+### Home Page Screenshot
+![home page Screenshot](https://i.ibb.co/VBY11tX/screencapture-file-D-New-folder-udemy-udemy-clone-index-html-2021-08-17-00-21-31.png?text=homepage+Screenshot+Here)
+
+### Product page Screenshot
+![Product page Screenshot](https://i.ibb.co/BP8x75K/screencapture-file-D-New-folder-udemy-udemy-clone-pages-product-html-2021-08-17-00-24-35.png?text=homepage+Screenshot+Here)
+
+### Cart page Screenshot
+![Cart page Screenshot](https://i.ibb.co/BGZFwfw/screencapture-file-D-New-folder-udemy-udemy-clone-pages-cart-html-2021-08-17-00-30-36.png?text=homepage+Screenshot+Here)
+  
+### Payment Page Screenshot
+![home page Screenshot](https://i.ibb.co/BzHZ8h6/screencapture-file-D-New-folder-udemy-udemy-clone-pages-checkout-html-2021-08-17-00-34-21.png?text=homepage+Screenshot+Here)
+
+### Sucess Page Screenshot
+![Sucess page Screenshot](https://i.ibb.co/ch4W0xX/screencapture-file-D-New-folder-udemy-udemy-clone-pages-pay-Success-html-2021-08-17-00-35-28.png?text=homepage+Screenshot+Here)
