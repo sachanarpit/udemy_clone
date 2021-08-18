@@ -54,7 +54,7 @@ Javascript, HTML, CSS...
   
 ## Screenshots from our Project
 ### Home Page Screenshot
-![home page Screenshot](https://i.ibb.co/VBY11tX/screencapture-file-D-New-folder-udemy-udemy-clone-index-html-2021-08-17-00-21-31.png?text=homepage+Screenshot+Here)
+![home page Screenshot](https://i.ibb.co/LCtxpwk/screencapture-udemy-clone-project-netlify-app-2021-08-18-14-18-58.png?text=homepage+Screenshot+Here)
 
 ### Categories Page Screenshot
 ![Categories page Screenshot](https://i.ibb.co/St6rkYs/screencapture-file-D-New-folder-udemy-udemy-clone-pages-categories-html-2021-08-17-00-39-35.png?text=homepage+Screenshot+Here)
