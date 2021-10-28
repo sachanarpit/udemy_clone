@@ -9,9 +9,9 @@ udemy.com
 Udemy, Inc. is an American massive open online course (MOOC) provider aimed at professional adults and students. It was founded in May 2010 by Eren Bali, Gagan Biyani, and Oktay Caglar.
 
 ## build using:
-HTML5
-CSS
-JavaScript
+<li>HTML5</li>
+<li>CSS</li>
+<li>JavaScript</li>
 
 
 ## Color Reference
