@@ -5,6 +5,14 @@
 # Project Title
 
 udemy.com
+## About Udemy:
+Udemy, Inc. is an American massive open online course (MOOC) provider aimed at professional adults and students. It was founded in May 2010 by Eren Bali, Gagan Biyani, and Oktay Caglar.
+
+## build using:
+HTML5
+CSS
+JavaScript
+
 
 ## Color Reference
 
